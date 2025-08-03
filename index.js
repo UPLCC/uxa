@@ -1,5 +1,5 @@
 function help(){
-console.log("提示(value):无返回\n打印(value):无返回\nloc存储(key,value):无返回\nloc读取(key):返回变量locdq\nloc删除(key):无返回\nloc删除全部():无返回\nloc遍历():返回变量locfh,locfha,locfhb\n写入(value):无返回\n输入弹窗(value):返回变量srtcfh\n跳转(value):无返回\nloc索引(number):返回变量locsy\n进制转换(64进制数):返回变量szshi,szer");
+console.log("提示(value):无返回\n打印(value):无返回\nloc存储(key,value):无返回\nloc读取(key):返回变量locdq\nloc删除(key):无返回\nloc删除全部():无返回\nloc遍历():返回变量locfh,locfha,locfhb\n写入(value):无返回\n输入弹窗(value):返回变量srtcfh\n跳转(value):无返回\nloc索引(number):返回变量locsy\n进制转换(64进制数):返回变量szshi,szer\n转二进制(10进制数):返回变量szera");
 }
 function 提示(value){
 alert(value);
@@ -82,4 +82,9 @@ return szshi;
 szer=BigInt(scesza).toString(2);
 return szshi;
 return szer;
+}
+var szera;
+function 转二进制(number){
+szera=BigInt(number).toString(2);
+return szera;
 }
